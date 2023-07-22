@@ -1,27 +1,19 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-/**
- * print_char - writes the character c to stdout
- * @c: The character to print
- *
- * Return: 1.
- */
-int print_char(va_list c)
-{
-	unsigned char my_char;
+#include <unistd.h>
 
-	my_char = va_arg(c, int);
-	_putchar(my_char);
-	return (1);
-}
 /**
- * print_porcentage - %
+ * print_char - print char
  *
- * Return: 1.
+ * @args: argument.
+ *
+ * Return: count of chars.
  */
-int print_porcentage(void)
+
+int print_char(va_list args)
 {
-	_putchar('%');
+	char c = va_arg(args, int);
+
+	_putchar(c);
+
 	return (1);
 }
