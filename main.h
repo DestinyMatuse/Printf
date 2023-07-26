@@ -111,5 +111,5 @@ int is_digit(char);
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
->>>>>>> 90e3b2624bb07709d19c41723f51bcbcfa58671f
-#endif /* MAIN_H */
+
+#endif 
